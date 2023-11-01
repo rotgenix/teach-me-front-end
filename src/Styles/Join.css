@@ -1,0 +1,9 @@
+.join {
+
+    display: flex;
+    max-width: 800px;
+    margin: 80px auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 50px;
+}

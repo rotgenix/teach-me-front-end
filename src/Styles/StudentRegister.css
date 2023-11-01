@@ -1,0 +1,46 @@
+.student-form {
+    max-width: 800px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 70vh;
+    justify-content: center;
+
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+textarea,
+input {
+    font-size: 18px;
+    padding: 2.5px;
+    outline: none;
+    /* border: 1p solid gray; */
+    /* border-radius: 3px; */
+}
+
+.submit {
+    background-color: rgb(177, 243, 243);
+    width: 80px;
+    font-size: 17px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+button:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,106 @@
+.home {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 90px;
+    /* height: 70vh; */
+}
+
+/****TEACHME-HOME***/
+.teachme-home {
+    width: 100%;
+    height: 70vh;
+    background-image: url(https://images.pexels.com/photos/4050302/pexels-photo-4050302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0 0 200px 200px;
+    background-size: cover;
+    overflow: hidden;
+    margin-top: 140px;
+    margin-bottom: 50px;
+    position: relative;
+
+}
+
+.teachme-home-text {
+    background-color: #fdf8eea1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
+.teachme-home-text h1 {
+    padding-block: 5px;
+    padding-inline: 10px;
+}
+
+.teachme-home-text p {
+    font-size: 18px;
+    font-weight: 500;
+    padding-block: 5px;
+    padding-inline: 10px;
+}
+
+/****OUR_GOAL****/
+.our-goal {
+    /* margin: 100px 0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 50px;
+}
+
+.our-goal img {
+    width: 450px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+}
+
+/*****TEACHME_ABOUT*****/
+.teachme-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+    margin-block: 50px;
+}
+
+.teachme-about img {
+    width: 450px;
+}
+
+
+.cards {
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+/******SERVICES****/
+.services {
+    margin-block: 50px;
+}
+
+.service-card {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    height: 380px;
+}
+
+.service-card img {
+    width: 350px;
+}
