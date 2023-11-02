@@ -12,8 +12,7 @@ import Teachers from './Components/Teachers'
 
 
 export const server = 'https://teach-me-backend.onrender.com'
-
-
+// export const server = 'http://localhost:5000'
 
 const App = () => {
 
