@@ -10,6 +10,11 @@ import Footer from './Components/Footer'
 import Login from './Components/Login'
 import Teachers from './Components/Teachers'
 
+
+export const server = 'https://teach-me-backend.onrender.com'
+
+
+
 const App = () => {
 
   return (

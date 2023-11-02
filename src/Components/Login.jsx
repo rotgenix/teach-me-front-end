@@ -7,7 +7,7 @@ import { Context } from '../main';
 const Login = () => {
     useEffect(() => {
         const checkLogin = async () => {
-            const { data } = await axios.get("http://localhost:5000/login", {
+            const { data } = await axios.get(`${server}/login`, {
                 withCredentials: true,
             })
 
@@ -26,7 +26,7 @@ const Login = () => {
     const Navigate = useNavigate();
 
     const submitlogin = async () => {
-        const { data } = await axios.post("http://localhost:5000/login", {
+        const { data } = await axios.post(`${server}/login`, {
             email, password
         }, {
             headers: {
@@ -36,15 +36,11 @@ const Login = () => {
         })
 
         if (data.success === 'true') {
-            // console.log(data);
-            // alert(data.messsage);
             setIsAuthenticated(true);
-            // alert(data.messsage);
             return Navigate('/');
         }
         else {
             setIsAuthenticated(false);
-            // alert(data.messsage);
         }
     }
 

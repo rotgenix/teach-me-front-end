@@ -17,7 +17,7 @@ const Teachers = () => {
         if (isAuthenticated) {
             const teachers = async () => {
                 // console.log("teachers")
-                let { data } = await axios.get("http://localhost:5000/teachers");
+                let { data } = await axios.get(`${server}/teachers`);
                 const data2 = await data.data;
 
                 setTeachersArr(data2)

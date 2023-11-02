@@ -11,10 +11,10 @@ import axios from 'axios'
 import { Context } from '../main'
 const Home = () => {
 
-    const {  setIsAuthenticated } = useContext(Context);
+    const { setIsAuthenticated } = useContext(Context);
 
     const fetchHome = async () => {
-        const { data } = await axios.get("http://localhost:5000/home", {
+        const { data } = await axios.get(`${server}/home`, {
             withCredentials: true,
         });
         if (data.success === 'true') {

@@ -10,18 +10,16 @@ const TeacherRegister = () => {
     useEffect(() => {
 
         const checkLogin = async () => {
-            const { data } = await axios.get("http://localhost:5000/login", {
+            const { data } = await axios.get(`${server}/login`, {
                 withCredentials: true,
             })
-           
+
             if (data.success === false) {
-                console.log(data.success)
-                alert(data.messsage);
                 return Navigate('/');
             }
         }
         checkLogin();
-    },[])
+    }, [])
 
     const { isAuthenticated, setIsAuthenticated } = useContext(Context);
 
@@ -34,7 +32,7 @@ const TeacherRegister = () => {
     const submitForm = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.post("http://localhost:5000/teacherregister", {
+            const { data } = await axios.post(`${server}/teacherregister`, {
                 name,
                 qualification,
                 email,
@@ -48,12 +46,11 @@ const TeacherRegister = () => {
             })
             if (data.success === 'false') {
                 setIsAuthenticated(false);
-                alert(data.messsage);
+
                 return Navigate('/login');
             }
             else {
                 setIsAuthenticated(true);
-                alert(data.messsage);
                 return Navigate('/');
             }
         } catch (error) {

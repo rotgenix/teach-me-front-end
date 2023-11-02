@@ -31,12 +31,11 @@ const Navbar = () => {
         top: '-370px'
     }
 
-
     const Navigate = useNavigate();
     const { isAuthenticated, setIsAuthenticated } = useContext(Context);
 
     const logout = async () => {
-        const { data } = await axios.get("http://localhost:5000/logout", {
+        const { data } = await axios.get(`${server}/logout`, {
             withCredentials: true,
         });
 
@@ -52,7 +51,6 @@ const Navbar = () => {
             <nav className='navbar'>
                 <div className="nav-con">
                     <div className="left">
-                        {/* <img src="" alt="" /> */}
                         <Link to='/'><h1>Teach ME</h1></Link>
                     </div>
 

@@ -18,7 +18,7 @@ const Join = () => {
     useEffect(() => {
         
         const checkLogin = async () => {
-            const { data } = await axios.get("http://localhost:5000/login", {
+            const { data } = await axios.get(`${server}/login`, {
                 withCredentials: true,
             })
            

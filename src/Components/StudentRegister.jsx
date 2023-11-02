@@ -12,11 +12,11 @@ const StudentRegister = () => {
     useEffect(() => {
 
         const checkLogin = async () => {
-            const { data } = await axios.get("http://localhost:5000/login", {
+            const { data } = await axios.get(`${server}/login`, {
                 withCredentials: true,
             })
             if (data.success === false) {
-               
+
                 return Navigate('/');
             }
         }
@@ -35,7 +35,7 @@ const StudentRegister = () => {
     const submitForm = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.post("http://localhost:5000/studentregister", {
+            const { data } = await axios.post(`${server}/studentregister`, {
                 name,
                 scClass,
                 school,
@@ -51,12 +51,12 @@ const StudentRegister = () => {
 
             if (data.success === 'false') {
                 setIsAuthenticated(false);
-                // alert(data.messsage);
+               
                 return Navigate('/login');
             }
             else {
                 setIsAuthenticated(true);
-                // alert(data.messsage);
+                
                 return Navigate('/');
             }
         } catch (error) {
@@ -157,7 +157,7 @@ const StudentRegister = () => {
                         className='submit'
                         type='submit'
                     >Submit</button>
-                    
+
                 </div>
             </form>
         </>
