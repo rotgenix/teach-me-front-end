@@ -7,10 +7,11 @@ import contact from '../assets/contact.svg'
 const Footer = () => {
     return (
         <>
-
             <footer id='footer' className='footer'>
                 <h1>Contact & Join Us</h1>
-                <div className="contact-form">
+
+
+                <div className="contact-form" id='contact'>
                     <div className="inputs">
                         <div className="form-input">
                             <label htmlFor='name'>Name</label>
@@ -49,10 +50,13 @@ const Footer = () => {
                         </div>
 
                     </div>
+
+
                     <div className="contact-image">
                         <img src={contact} alt="" />
                     </div>
                 </div>
+
 
                 <div className='social-container'>
                     <div className="socials">
@@ -84,8 +88,8 @@ const Footer = () => {
                         <button>Subscribe</button>
                     </div>
                 </div>
-            </footer>
 
+            </footer>
         </>
     )
 }

@@ -1,8 +1,9 @@
 .home {
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 90px;
+    /* margin-top: 90px; */
     /* height: 70vh; */
+    padding-inline: 25px;
 }
 
 /****TEACHME-HOME***/
@@ -15,8 +16,9 @@
     border-radius: 0 0 200px 200px;
     background-size: cover;
     overflow: hidden;
-    margin-top: 140px;
+    margin-top: 40px;
     margin-bottom: 50px;
+    /* margin-inline: 25px; */
     position: relative;
 
 }
@@ -32,11 +34,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 5px;
+    text-align: center;
 }
 
 .teachme-home-text h1 {
+    text-align: center;
     padding-block: 5px;
     padding-inline: 10px;
+    /* justify-content: center; */
+
 }
 
 .teachme-home-text p {
@@ -65,6 +71,10 @@
     max-width: 650px;
 }
 
+.text p {
+    padding-right: 20px;
+}
+
 /*****TEACHME_ABOUT*****/
 .teachme-about {
     display: flex;
@@ -89,6 +99,16 @@
 /******SERVICES****/
 .services {
     margin-block: 50px;
+}
+.services h1{
+    text-align: center;
+    margin-block: 25px;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .service-card {

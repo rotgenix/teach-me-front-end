@@ -1,0 +1,10 @@
+.login-page {
+    max-width: 800px;
+    margin: 150px auto;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}

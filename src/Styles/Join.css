@@ -3,7 +3,14 @@
     display: flex;
     max-width: 800px;
     margin: 80px auto;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding-block: 50px;
+    gap: 35px;
+}
+
+.join div {
+    display: flex;
+    gap: 25px;
 }

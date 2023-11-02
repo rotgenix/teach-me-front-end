@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 
 import ourGoal from '../assets/target.svg'
 import whoWeAre from '../assets/who-we-are.svg'
@@ -7,11 +7,28 @@ import onetoone from '../assets/one-to-one.svg'
 import hometutor from '../assets/home-tutor.svg'
 
 import '../Styles/Home.css'
+import axios from 'axios'
+import { Context } from '../main'
 const Home = () => {
+
+    const {  setIsAuthenticated } = useContext(Context);
+
+    const fetchHome = async () => {
+        const { data } = await axios.get("http://localhost:5000/home", {
+            withCredentials: true,
+        });
+        if (data.success === 'true') {
+            setIsAuthenticated(true);
+        }
+        else {
+            setIsAuthenticated(false);
+        }
+    }
+    fetchHome();
+
     return (
         <>
             <div className="home">
-
                 <div className="teachme-home" id='teachme-home'>
                     <div className='teachme-home-text'>
                         <h1>Welcome to Teach Me</h1>
@@ -37,7 +54,7 @@ const Home = () => {
                             Who we are?
                         </h1>
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, dolorum quam cum officia neque perspiciatis in odit magni laborum libero fugiat reprehenderit officiis facilis dolores nesciunt molestiae totam enim. Totam, tempora repellendus expedita fugiat assumenda modi at harum beatae! Deleniti animi voluptate totam sapiente earum reprehenderit, expedita officiis atque nulla asperiores, libero sunt provident repellat, commodi quaerat. Aliquam quasi cumque quod. Quidem consectetur veniam nam, saepe vel, itaque a libero ipsam tempore dolore labore, soluta quisquam sunt quam sed ipsum aliquid facere quo in? Nemo maxime molestias blanditiis similique explicabo debitis voluptates, quisquam, aliquid culpa animi, nesciunt delectus recusandae a?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias unde pariatur ipsum ea id minima animi, quidem quo aut sequi fugit temporibus dolore? Explicabo quos dolorem quas amet tenetur exercitationem velit ad maiores excepturi odio, deleniti modi doloremque animi. At omnis incidunt molestias iure fugiat eos odit nihil? Rem, corrupti?
                         </p>
                     </div>
                     <img src={whoWeAre} alt="" />
@@ -63,11 +80,9 @@ const Home = () => {
                             <h3>One on One Teaching</h3>
                         </div>
 
-                        
+
                     </div>
                 </div>
-                
-                
             </div>
         </>
     )
