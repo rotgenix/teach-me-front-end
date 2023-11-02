@@ -105,11 +105,17 @@
 
     .inputs {
         max-width: 80vw;
-    
+
     }
 
     .contact-image {
         width: 100%;
+    }
+
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        /* padding: 100px; */
     }
 
 }
