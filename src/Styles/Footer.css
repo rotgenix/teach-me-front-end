@@ -28,7 +28,7 @@
 
 
 .socials ul {
-    width: 350px;
+    width: 320px;
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -41,7 +41,7 @@
 }
 
 .subscribe {
-    width: 350px;
+    max-width: 350px;
     background-color: antiquewhite;
     display: flex;
     justify-content: space-between;
