@@ -4,6 +4,7 @@ import { Context } from '../main';
 import { useNavigate } from 'react-router-dom';
 import TeacherCard from './TeacherCard';
 import '../Styles/Teachers.css'
+import { server } from '../App';
 
 const Teachers = () => {
     const Navigate = useNavigate();

@@ -7,6 +7,7 @@ import axios from 'axios';
 
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { RxCross2 } from 'react-icons/rx';
+import { server } from '../App';
 
 const Navbar = () => {
     const logoutbtn = {

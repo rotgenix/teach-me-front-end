@@ -9,6 +9,7 @@ import hometutor from '../assets/home-tutor.svg'
 import '../Styles/Home.css'
 import axios from 'axios'
 import { Context } from '../main'
+import { server } from '../App'
 const Home = () => {
 
     const { setIsAuthenticated } = useContext(Context);

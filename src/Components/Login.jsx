@@ -3,6 +3,7 @@ import '../Styles/Login.css'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { Context } from '../main';
+import { server } from '../App';
 
 const Login = () => {
     useEffect(() => {

@@ -5,6 +5,7 @@ import '../Styles/StudentRegister.css'
 
 import { Context } from '../main'
 import { useNavigate } from 'react-router-dom'
+import { server } from '../App'
 
 const StudentRegister = () => {
     const Navigate = useNavigate();

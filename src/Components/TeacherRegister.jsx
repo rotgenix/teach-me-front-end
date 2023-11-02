@@ -3,6 +3,7 @@ import '../Styles/StudentRegister.css'
 import axios from 'axios';
 import { Context } from '../main';
 import { useNavigate } from 'react-router-dom';
+import { server } from '../App';
 
 const TeacherRegister = () => {
     const Navigate = useNavigate();
