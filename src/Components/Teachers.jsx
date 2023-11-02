@@ -24,7 +24,7 @@ const Teachers = () => {
                 setTeachersArr(data2)
             }
             teachers();
-            console.log(teachersArr.length)
+            // console.log(teachersArr.length)
         }
         else {
 
@@ -39,11 +39,7 @@ const Teachers = () => {
                     <div className="teacher-cards">
                         {
                             teachersArr.map((value, index) => {
-                                console.log(value);
-                                console.log(value.name);
-                                console.log(value.email);
-                                console.log(value.qualification);
-                                console.log(value.number);
+                                
                                 return (
                                     <TeacherCard
                                         name={value.name}

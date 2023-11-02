@@ -17,12 +17,12 @@ const Join = () => {
     const Navigate = useNavigate();
 
     useEffect(() => {
-        
+
         const checkLogin = async () => {
             const { data } = await axios.get(`${server}/login`, {
                 withCredentials: true,
             })
-           
+
             if (data.success === false) {
                 console.log(data.success)
                 alert(data.messsage);
@@ -30,7 +30,7 @@ const Join = () => {
             }
         }
         checkLogin();
-    },[])
+    }, [])
 
 
     return (

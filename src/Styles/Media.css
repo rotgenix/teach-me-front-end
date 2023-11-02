@@ -118,4 +118,16 @@
         /* padding: 100px; */
     }
 
+    .join div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .join h2 {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
