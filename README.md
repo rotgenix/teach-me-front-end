@@ -1,5 +1,5 @@
 # Teach Me
-This is MERN Stack App. It is fully functional like you can Register as a Teacher/Student.
+This is MERN Stack App. It is fully responsive and functional like you can Register as a Teacher/Student.
 Student can login again but Teacher's can't, they can only register.
 Students can see teachers available for teaching in Teachers section. Info of Teachers is fetched dynamically from Database (MongoDB). Whenever Student/Teacher registers their data is also saved in DB.
 
@@ -8,9 +8,9 @@ Email: student1@gmail.com
 Password: student1
 
 Or you can register as a student to check the app.
-If you register as a Teacher then you can't login but as a student you can see all the registered Teachers.
 
-This is app is fully responsive for all the Devices.
+If you register as a Teacher then you can't login but as a student you can see all the registered Teachers.
+Check Here: https://teach-me-front-end.vercel.app/
 
 ## Technologies and Packages used
 
